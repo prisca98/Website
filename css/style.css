@@ -1,0 +1,371 @@
+@font-face {
+    src: url("fonts/Berlin Sans FB Regular.ttf");
+    font-family: Berlin Sans FB;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1179px) {
+
+    /* For tablets: */
+    #maincontent,
+    #referralcontent,
+    #sportcontent,
+    #mainsecondarycontent {
+        width: 80%;
+        padding: 0;
+    }
+    
+    .header,
+    .Haarlem,
+    .Museums,
+    .Restaurant,
+    .footer,
+    .secondarycontent,
+    .shopping,
+    .companies,
+    .TouristicAttraction,
+    .SportList,.Contact {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    /* For mobile phones: */
+    .header,
+    .HaarlemIntroduction,
+    .Museums,
+    .Restaurant,
+    .footer,
+    .secondarycontent,
+    .shopping,
+    .companies,
+    .TouristicAttraction,
+    .SportList {
+        width: 100%;
+    }
+    .nav{
+        flex-flow: column;
+        padding: 0px;
+        float: left;
+    
+    }
+
+}
+
+@media only screen and (max-width:1280px) {
+
+    /* For pc : */
+    .header,
+    .HaarlemIntroduction,
+    .Museums,
+    .Restaurant,
+    .footer,
+    .secondarycontent,
+    .shopping,
+    .companies,
+    .TouristicAttraction,
+    .SportList {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    background-attachment: fixed;
+    background-size: cover;
+    background: white;
+}
+
+/*header*/
+.header {
+    background: white;
+    color: #110011;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #f5f5f5;
+}
+
+.header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    font-family: Berlin Sans FB;
+    font-size: 80px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 2px;
+    display: grid;
+    text-shadow: 2px 2px;
+}
+
+.header h2 {
+    position: relative;
+    top: 4px;
+    left: -10px;
+    font-family: Arial;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* navigation bar*/
+.nav {
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0963a3;
+    z-index: 2;
+}
+
+.nav ul li a {
+    display: block;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+.nav ul li {
+    float: left;
+    width: 20%;
+}
+
+.nav ul li a:hover {
+    background-color: #0963a3;
+    color: white;
+}
+
+#maincontent,
+#mainsecondarycontent,
+#sportcontent,#referralcontent,#contactcontent {
+    background-color: #f5f5f5;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+}
+#maincontent h2,#mainsecondarycontent h2,#sportcontent h2,#referralcontent h2,#contactcontent h2{
+    position: relative;
+    top: 5px;
+    left: -10px;
+    font-family: Arial;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.secondarycontent,
+.shopping,
+.companies,
+.TouristicAttraction,
+.SportList,.Museums,.Restaurant {
+    color: #000000;
+    padding: 10px;
+}
+.Haarlem h3,.Museums h4,
+.Restaurant h5,
+.secondarycontent h3,.shopping h3,.companies h4,.TouristicAttraction h5,.SportList h3,.Contact h3
+ {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+    font-weight: 800;
+    line-height: 50px;
+    text-decoration: none;
+}
+.Haarlem p,
+.Museums p,
+.Restaurant p,
+.secondarycontent p,
+.shopping p,
+.companies p,
+.TouristicAttraction p,#referralcontent p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 14px;
+    padding: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+p::first-letter {
+    color: #444444;
+    font-size: 20px;
+}
+p span{
+    display: block;
+}
+/*image for main content */
+
+#maincontent img,
+.Museums img,
+.Restaurant img {
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+    padding: 2px;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+    overflow: auto;
+    float: left;
+}
+.Museums ol,
+.Restaurant ol,
+.SportList ol {
+    list-style-type: square;
+    font-size: 18px;
+    list-style-position: inside;
+    margin: 0px;
+    padding: 0px;
+}
+.shopping ul li,
+.companies ul li {
+    list-style-type: circle;
+    font-size: 18px;
+    list-style-position: inside;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+/* footer */
+footer>em {
+    color: #000;
+    font-size: 14px;
+}
+
+footer {
+    color: #000000;
+    font-size: 14px;
+    padding: 40px;
+    text-align: center;
+}
+
+/*main secondary img */
+
+.secondarycontent img,
+.shopping img {
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+    padding: 2px;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    width: 150px;
+    height: 100px;
+    overflow: auto;
+    float: left;
+}
+/*----------- video------ */
+#HaarlemVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    width: auto;
+    height: auto;
+}
+.image {
+    width: 120px;
+    height: 120px;
+    float: right;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+    padding: 5px;
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    margin: 20px;
+
+}
+#referralcontent {
+    display: block;
+    width: 34%;
+    height: 15%;
+    border-width: thin;
+    border-style: solid;
+    border-color: #141011;
+    margin: 10px;
+    float: left;
+}
+
+/*article*/
+article {
+    margin-top: 0.1em;
+    margin-bottom: 0.4em;
+    padding: 5px;
+  
+}
+/*section style */
+section {
+    float: right;
+    font-size: 16px;
+}
+
+/*contact content */
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
